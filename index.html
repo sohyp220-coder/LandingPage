@@ -1,179 +1,50 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WolfAlphaSystems | Leadership in CodeWorld</title>
+    <title>WolfAlphaSystems System</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sohyp220-coder/WolfStyle@main/WolfStyle.css">
-    <style>
-        :root {
-            --cyan-color: #00bcd4;
-            --dark-bg: #0a0b0c;
-            --card-bg: #161b22;
-        }
-
-        body {
-            background-color: var(--dark-bg);
-            color: #e6edf3;
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-
-        .hero {
-            height: 80vh; /* تقليل الطول قليلاً للموبايل */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            background: linear-gradient(rgba(10, 11, 12, 0.8), rgba(10, 11, 12, 0.9)), 
-                        url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=1350');
-            background-size: cover;
-            background-position: center;
-            padding: 20px;
-        }
-
-        .brand-name {
-            font-size: clamp(2rem, 8vw, 3.5rem); /* حجم خط مرن */
-            color: var(--cyan-color);
-            margin-bottom: 10px;
-            text-shadow: 0 0 15px rgba(0, 188, 212, 0.4);
-            font-weight: 800;
-        }
-
-        .slogan {
-            font-size: clamp(1rem, 4vw, 1.5rem);
-            color: #8b949e;
-            letter-spacing: 1px;
-            margin-bottom: 20px;
-        }
-
-        .services-card {
-            background: var(--card-bg);
-            margin: 20px auto;
-            padding: 30px;
-            border-radius: 20px;
-            border-right: 4px solid var(--cyan-color); /* التميز من جهة اليمين للـ RTL */
-            max-width: 600px;
-            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-        }
-
-        .services-card h2 {
-            color: var(--cyan-color);
-            margin-top: 0;
-        }
-
-        .ceo-section {
-            padding: 40px 20px;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .ceo-quote {
-            font-size: 1.1rem;
-            font-style: italic;
-            color: #c9d1d9;
-            position: relative;
-            display: inline-block;
-        }
-
-        /* Footer محسّن للموبايل */
-        .contact-footer {
-            background: rgba(22, 27, 34, 0.95);
-            backdrop-filter: blur(10px);
-            border-top: 1px solid rgba(0, 188, 212, 0.2);
-            color: white;
-            padding: 15px 20px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-sizing: border-box;
-            z-index: 1000;
-        }
-
-        .footer-info {
-            text-align: right;
-        }
-
-        .footer-info strong {
-            display: block;
-            font-size: 0.9rem;
-            color: var(--cyan-color);
-        }
-
-        .btn-whatsapp {
-            background: #25d366; /* لون الواتساب الرسمي */
-            color: white;
-            padding: 12px 25px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 0.9rem;
-            transition: transform 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .btn-whatsapp:hover {
-            transform: scale(1.05);
-        }
-
-        /* مسافة تحت عشان الفوتر ميغطيش الكلام */
-        .spacer {
-            height: 120px;
-        }
-
-        @media (max-width: 480px) {
-            .contact-footer {
-                flex-direction: column;
-                gap: 10px;
-            }
-            .btn-whatsapp {
-                width: 100%;
-                justify-content: center;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="logo-area">
+            <img src="https://img.icons8.com/?size=40&id=43s08h4rdYPW&format=png&color=f1f1f1" alt="Logo">
+            <span>WolfAlphaSystems</span>
+        </div>
+        <nav>
+            <a href="index.html">home</a>
+            <a href="#" class="nav-link">About us</a>
+            <a href="#" class="contact">contact</a>
+        </nav>
+    </header>
 
-    <section class="hero">
-        <h1 class="brand-name">WolfAlphaSystems</h1>
-        <p class="slogan">Leadership in CodeWorld</p>
-        <p>مرحباً بكم في عالم البرمجة بقيادة <strong>صهيب</strong></p>
-    </section>
+    <div id="main-content">
+        <div class="cont">
+            <img src="https://img.icons8.com/?size=100&id=43s08h4rdYPW&format=png&color=ffffff9d" alt="Large Logo">
+            <h2>WolfAlphaSystems</h2>
+            <span>innovating future of technology</span>
+        </div>
 
-    <div class="services-card">
-        <h2>Front-end Development</h2>
-        <p>نحول أفكارك إلى واقع تفاعلي. نحن متخصصون في بناء الواجهات البرمجية وتطوير الأدوات المبتكرة  <strong></strong>.</p>
+        <div class="projects-section">
+            <h3 class="section-title">Software Projects</h3>
+            <div class="div">
+                <div class="card-container">
+                    
+                </div>
+                <div class="card-container"></div>
+                <div class="card-container"></div>
+                <div class="card-container"></div>
+                <div class="card-container"></div>
+                <div class="card-container"></div>
+            </div>
+        </div>
     </div>
 
-    <section class="ceo-section">
-        <p class="ceo-quote">"نحن لا ننتظر الإمكانيات، نحن نصنع الإبداع من قلب التحدي. البرمجة شغف، والقيادة قرار."</p>
-        <div style="margin-top: 15px;">
-            <strong style="color: var(--cyan-color);">صهيب - المدير التنفيذي</strong>
-        </div>
-    </section>
-
-    <div class="spacer"></div>
-
-    <footer class="contact-footer">
-        <div class="footer-info">
-            <strong>تواصل مع المدير التنفيذي:</strong>
-            <span>01020929052</span>
-        </div>
-        <a href="https://wa.me/201020929052" class="btn-whatsapp" target="_blank">
-            تواصل الآن عبر واتساب
-        </a>
-    </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/sql-wasm.js"></script>
+    <script src="SQL.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
