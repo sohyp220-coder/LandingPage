@@ -8,7 +8,6 @@ links.forEach(link => {
         if(val === 'About us' || val === 'contact') {
             e.preventDefault(); 
             
-            // بنمسح المحتوى اللي تحت الهيدر بس
             mainContent.innerHTML = ''; 
             mainContent.style.minHeight = '80vh';
             mainContent.style.display = 'flex';
